@@ -1,0 +1,27 @@
+SIMFILE
+
+SET_MACRO $(ROOT_FILE_NAME)$ Run_355992bd-aee7-42f3-b7c4-a299a78ba4d8
+SET_MACRO $(OUTPUT_PATH)$ C:\Users\Public\Documents\CarSim2019.1_Data\Results
+SET_MACRO $(WORK_DIR)$ C:\Users\Public\Documents\CarSim2019.1_Data\
+SET_MACRO $(OUTPUT_FILE_PREFIX)$ $(WORK_DIR)$Results\Run_355992bd-aee7-42f3-b7c4-a299a78ba4d8\LastRun
+
+FILEBASE $(OUTPUT_FILE_PREFIX)$
+INPUT $(WORK_DIR)$Results\$(ROOT_FILE_NAME)$\Run_all.par
+INPUTARCHIVE $(OUTPUT_FILE_PREFIX)$_all.par
+ECHO $(OUTPUT_FILE_PREFIX)$_echo.par
+FINAL $(OUTPUT_FILE_PREFIX)$_end.par
+LOGFILE $(OUTPUT_FILE_PREFIX)$_log.txt
+ERDFILE $(OUTPUT_FILE_PREFIX)$.vs
+PROGDIR C:\Program Files (x86)\CarSim2019.1_Prog\
+DATADIR C:\Users\Public\Documents\CarSim2019.1_Data\
+GUI_REFRESH_V CarSim_RefreshEvent_13756
+RESOURCEDIR C:\Program Files (x86)\CarSim2019.1_Prog\\Resources\
+PRODUCT_ID CarSim
+PRODUCT_VER 2019.1
+ANIFILE C:\Users\Public\Documents\CarSim2019.1_Data\runs\animator.par
+VEHICLE_CODE i_s
+EXT_MODEL_STEP 0.00050000
+PORTS_IMP 1,4
+PORTS_EXP 1,7
+
+END
